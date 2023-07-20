@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Postgres.Api.Repository.Courses;
 using Postgres.Api.Repository.Instructors;
 
 namespace Postgres.Api.Repository.Model
@@ -13,7 +14,12 @@ namespace Postgres.Api.Repository.Model
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new CourseConfiguration());
         }
+
         public DbSet<Instructor> Instructor { get; set; } 
+        public DbSet<Course> Courses { get; set; }
+
+        public DbSet<Price> Price { get; set; }
     }
 }

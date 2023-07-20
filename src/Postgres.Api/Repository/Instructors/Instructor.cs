@@ -1,5 +1,9 @@
-﻿namespace Postgres.Api.Repository.Instructors
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Postgres.Api.Repository.Instructors
 {
+
+    [Table("Teacher")]
     public class Instructor
     {
         public int Id { get; set; }
