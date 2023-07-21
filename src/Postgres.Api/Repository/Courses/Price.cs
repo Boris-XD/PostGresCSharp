@@ -8,7 +8,7 @@ namespace Postgres.Api.Repository.Courses
         public int Id { get; set; }
         public decimal CurrentPrice { get; set; }
         public decimal Promocion { get; set; }
-        public int CourseId { get; set; }
+        public Guid CourseId { get; set; }
 
         [ForeignKey(nameof(CourseId))]
         public virtual Course Course { get; set; }

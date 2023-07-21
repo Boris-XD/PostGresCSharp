@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Postgres.Api.Repository.Courses;
 using Postgres.Api.Repository.Instructors;
-
+/*
 namespace Postgres.Api.Repository.Model
 {
     public class CoursesDbContext : DbContext
@@ -22,4 +22,6 @@ namespace Postgres.Api.Repository.Model
 
         public DbSet<Price> Price { get; set; }
     }
-}
+
+CoursesDbContext
+}*/
